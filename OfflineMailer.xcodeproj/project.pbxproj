@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* OfflineMailerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OfflineMailerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B21F34EC1028F2B700A8F910 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F34EB1028F2B700A8F910 /* Contact.m */; };
+		B21F35721029087700A8F910 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F35711029087700A8F910 /* Message.m */; };
+		B2397A040F901CBF008363ED /* light_bulb_off.png in Resources */ = {isa = PBXBuildFile; fileRef = B2397A020F901CBF008363ED /* light_bulb_off.png */; };
+		B2397A050F901CBF008363ED /* light_bulb_on.png in Resources */ = {isa = PBXBuildFile; fileRef = B2397A030F901CBF008363ED /* light_bulb_on.png */; };
+		B24346750F9BC4F800DF1746 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B24346740F9BC4F800DF1746 /* bg.jpg */; };
+		B243B28E0FCA34C6009556CF /* TTAddressBookDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B243B28D0FCA34C6009556CF /* TTAddressBookDataSource.m */; };
+		B243B31A0FCA3A9B009556CF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B243B3190FCA3A9B009556CF /* AddressBook.framework */; };
+		B243BB0C0FCDECFD009556CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B243BB0B0FCDECFD009556CF /* CFNetwork.framework */; };
+		B26D4E800F904A640046A739 /* SearchTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D4E7F0F904A640046A739 /* SearchTestController.m */; };
+		B26D4F4C0F9051FA0046A739 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D4F4B0F9051FA0046A739 /* Icon.png */; };
+		B26D4F7A0F910B5C0046A739 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D4F790F910B5C0046A739 /* Default.png */; };
+		B26D51830F91544E0046A739 /* BlueBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D51820F91544E0046A739 /* BlueBadge.m */; };
+		B272D94C0F8E8B870096D584 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B272D94B0F8E8B870096D584 /* Settings.bundle */; };
+		B272D9920F8EB0E50096D584 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B272D9910F8EB0E50096D584 /* SettingsViewController.m */; };
+		B272DAB50F8EF1E00096D584 /* alert_125x125.png in Resources */ = {isa = PBXBuildFile; fileRef = B272DAB40F8EF1E00096D584 /* alert_125x125.png */; };
+		B272DAF90F8FDB430096D584 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B272DAF80F8FDB430096D584 /* AccountViewController.m */; };
+		B272DBA10F8FEFEF0096D584 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = B272DB9E0F8FEFEF0096D584 /* email.png */; };
+		B272DBA20F8FEFEF0096D584 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B272DB9F0F8FEFEF0096D584 /* folder.png */; };
+		B272DBA30F8FEFEF0096D584 /* send_email.png in Resources */ = {isa = PBXBuildFile; fileRef = B272DBA00F8FEFEF0096D584 /* send_email.png */; };
+		B2AB61960F8AEF37008C3106 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AB61950F8AEF37008C3106 /* Reachability.m */; };
+		B2C7B7A00FC4D4A800AAE49A /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7B79F0FC4D4A800AAE49A /* DataManager.m */; };
+		B2DD157C104E09E500B6CBF1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DD157B104E09E500B6CBF1 /* QuartzCore.framework */; };
+		B2DD15B6104E0D8E00B6CBF1 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DD15A2104E0D0100B6CBF1 /* libThree20.a */; };
+		B2DF113510261AFA0097722E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF113010261AFA0097722E /* FMDatabase.m */; };
+		B2DF113610261AFA0097722E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF113210261AFA0097722E /* FMDatabaseAdditions.m */; };
+		B2DF113710261AFA0097722E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF113410261AFA0097722E /* FMResultSet.m */; };
+		B2DF114810261B4C0097722E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF114710261B4C0097722E /* libsqlite3.dylib */; };
+		B2DF12D41026388B0097722E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF12D31026388B0097722E /* CoreData.framework */; };
+		B2DF12DD102639130097722E /* OfflineMailer.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = B2DF12DC102639130097722E /* OfflineMailer.xcdatamodel */; };
+		B2E7DE9F0F89324D00E5F677 /* OfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E7DE9E0F89324D00E5F677 /* OfflineViewController.m */; };
+		B2E7E0190F89AB3B00E5F677 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E7E0180F89AB3B00E5F677 /* SystemConfiguration.framework */; };
+		B2E9991E0FDB14E4001C3CDC /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2E9991D0FDB14E4001C3CDC /* Three20.bundle */; };
+		B2FBD7A10FE440AB00BDA639 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD7940FE440AB00BDA639 /* Base64Transcoder.m */; };
+		B2FBD7A20FE440AB00BDA639 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD7960FE440AB00BDA639 /* HSK_CFUtilities.m */; };
+		B2FBD7A30FE440AB00BDA639 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD7980FE440AB00BDA639 /* NSData+Base64Additions.m */; };
+		B2FBD7A40FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD79A0FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.m */; };
+		B2FBD7A50FE440AB00BDA639 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD79C0FE440AB00BDA639 /* SKPSMTPMessage.m */; };
+		B2FBD7A60FE440AB00BDA639 /* SMTPSenderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD79E0FE440AB00BDA639 /* SMTPSenderAppDelegate.m */; };
+		B2FBD7A70FE440AB00BDA639 /* SMTPSenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBD7A00FE440AB00BDA639 /* SMTPSenderViewController.m */; };
+		B2FBDA050FE4852700BDA639 /* offline.sql in Resources */ = {isa = PBXBuildFile; fileRef = B2FBDA040FE4852700BDA639 /* offline.sql */; };
+		B2FBDB0F0FE494EA00BDA639 /* SentMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FBDB0E0FE494EA00BDA639 /* SentMessagesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2DD15A1104E0D0100B6CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DD1598104E0D0100B6CBF1 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		B2DD15AD104E0D4400B6CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2DD1598104E0D0100B6CBF1 /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* OfflineMailerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineMailerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* OfflineMailerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineMailerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* OfflineMailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflineMailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* OfflineMailer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineMailer_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21F34EA1028F2B700A8F910 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		B21F34EB1028F2B700A8F910 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		B21F35701029087700A8F910 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		B21F35711029087700A8F910 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		B2397A020F901CBF008363ED /* light_bulb_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_bulb_off.png; sourceTree = "<group>"; };
+		B2397A030F901CBF008363ED /* light_bulb_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_bulb_on.png; sourceTree = "<group>"; };
+		B24346740F9BC4F800DF1746 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		B243B28C0FCA34C6009556CF /* TTAddressBookDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAddressBookDataSource.h; sourceTree = "<group>"; };
+		B243B28D0FCA34C6009556CF /* TTAddressBookDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAddressBookDataSource.m; sourceTree = "<group>"; };
+		B243B3190FCA3A9B009556CF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B243BB0B0FCDECFD009556CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B243BC700FCE2370009556CF /* OMGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMGlobals.h; sourceTree = "<group>"; };
+		B26D4E3C0F9045B70046A739 /* MockDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockDataSource.h; path = ../three20/samples/TTCatalog/Classes/MockDataSource.h; sourceTree = SOURCE_ROOT; };
+		B26D4E3D0F9045B70046A739 /* MockDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockDataSource.m; path = ../three20/samples/TTCatalog/Classes/MockDataSource.m; sourceTree = SOURCE_ROOT; };
+		B26D4E7E0F904A640046A739 /* SearchTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTestController.h; sourceTree = "<group>"; };
+		B26D4E7F0F904A640046A739 /* SearchTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTestController.m; sourceTree = "<group>"; };
+		B26D4F4B0F9051FA0046A739 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B26D4F790F910B5C0046A739 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		B26D51810F91544E0046A739 /* BlueBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueBadge.h; sourceTree = "<group>"; };
+		B26D51820F91544E0046A739 /* BlueBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueBadge.m; sourceTree = "<group>"; };
+		B272D94B0F8E8B870096D584 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B272D9900F8EB0E50096D584 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B272D9910F8EB0E50096D584 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B272DAB40F8EF1E00096D584 /* alert_125x125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert_125x125.png; sourceTree = "<group>"; };
+		B272DAF70F8FDB430096D584 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		B272DAF80F8FDB430096D584 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		B272DB9E0F8FEFEF0096D584 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		B272DB9F0F8FEFEF0096D584 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		B272DBA00F8FEFEF0096D584 /* send_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send_email.png; sourceTree = "<group>"; };
+		B2AB61940F8AEF37008C3106 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B2AB61950F8AEF37008C3106 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B2C7B79E0FC4D4A800AAE49A /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		B2C7B79F0FC4D4A800AAE49A /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		B2DD157B104E09E500B6CBF1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		B2DD1598104E0D0100B6CBF1 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B2DF112F10261AFA0097722E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		B2DF113010261AFA0097722E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		B2DF113110261AFA0097722E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B2DF113210261AFA0097722E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		B2DF113310261AFA0097722E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		B2DF113410261AFA0097722E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		B2DF114710261B4C0097722E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B2DF12D31026388B0097722E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B2DF12DC102639130097722E /* OfflineMailer.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = OfflineMailer.xcdatamodel; sourceTree = "<group>"; };
+		B2E7DE9D0F89324D00E5F677 /* OfflineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineViewController.h; sourceTree = "<group>"; };
+		B2E7DE9E0F89324D00E5F677 /* OfflineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineViewController.m; sourceTree = "<group>"; };
+		B2E7E0180F89AB3B00E5F677 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2E9991D0FDB14E4001C3CDC /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = Libraries/three20/src/Three20.bundle; sourceTree = "<group>"; };
+		B2FBD7930FE440AB00BDA639 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64Transcoder.h; path = SMTPSender/Base64Transcoder.h; sourceTree = "<group>"; };
+		B2FBD7940FE440AB00BDA639 /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Base64Transcoder.m; path = SMTPSender/Base64Transcoder.m; sourceTree = "<group>"; };
+		B2FBD7950FE440AB00BDA639 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSK_CFUtilities.h; path = SMTPSender/HSK_CFUtilities.h; sourceTree = "<group>"; };
+		B2FBD7960FE440AB00BDA639 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HSK_CFUtilities.m; path = SMTPSender/HSK_CFUtilities.m; sourceTree = "<group>"; };
+		B2FBD7970FE440AB00BDA639 /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64Additions.h"; path = "SMTPSender/NSData+Base64Additions.h"; sourceTree = "<group>"; };
+		B2FBD7980FE440AB00BDA639 /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64Additions.m"; path = "SMTPSender/NSData+Base64Additions.m"; sourceTree = "<group>"; };
+		B2FBD7990FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSStream+SKPSMTPExtensions.h"; path = "SMTPSender/NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
+		B2FBD79A0FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSStream+SKPSMTPExtensions.m"; path = "SMTPSender/NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
+		B2FBD79B0FE440AB00BDA639 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKPSMTPMessage.h; path = SMTPSender/SKPSMTPMessage.h; sourceTree = "<group>"; };
+		B2FBD79C0FE440AB00BDA639 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKPSMTPMessage.m; path = SMTPSender/SKPSMTPMessage.m; sourceTree = "<group>"; };
+		B2FBD79D0FE440AB00BDA639 /* SMTPSenderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMTPSenderAppDelegate.h; path = SMTPSender/SMTPSenderAppDelegate.h; sourceTree = "<group>"; };
+		B2FBD79E0FE440AB00BDA639 /* SMTPSenderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMTPSenderAppDelegate.m; path = SMTPSender/SMTPSenderAppDelegate.m; sourceTree = "<group>"; };
+		B2FBD79F0FE440AB00BDA639 /* SMTPSenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMTPSenderViewController.h; path = SMTPSender/SMTPSenderViewController.h; sourceTree = "<group>"; };
+		B2FBD7A00FE440AB00BDA639 /* SMTPSenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMTPSenderViewController.m; path = SMTPSender/SMTPSenderViewController.m; sourceTree = "<group>"; };
+		B2FBDA040FE4852700BDA639 /* offline.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = offline.sql; sourceTree = "<group>"; };
+		B2FBDB0D0FE494EA00BDA639 /* SentMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentMessagesViewController.h; sourceTree = "<group>"; };
+		B2FBDB0E0FE494EA00BDA639 /* SentMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SentMessagesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				B2E7E0190F89AB3B00E5F677 /* SystemConfiguration.framework in Frameworks */,
+				B243B31A0FCA3A9B009556CF /* AddressBook.framework in Frameworks */,
+				B243BB0C0FCDECFD009556CF /* CFNetwork.framework in Frameworks */,
+				B2DF114810261B4C0097722E /* libsqlite3.dylib in Frameworks */,
+				B2DF12D41026388B0097722E /* CoreData.framework in Frameworks */,
+				B2DD157C104E09E500B6CBF1 /* QuartzCore.framework in Frameworks */,
+				B2DD15B6104E0D8E00B6CBF1 /* libThree20.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF112B102619710097722E /* FMDB */,
+				B243BAF30FCDEAE4009556CF /* SMTP  */,
+				B2C7B79D0FC4D46000AAE49A /* Data Management */,
+				B2C7B79A0FC4D43B00AAE49A /* View Elements */,
+				B2E7DEC30F894BBC00E5F677 /* View Controllers */,
+				B2E7DEC20F894BB100E5F677 /* Network */,
+				1D3623240D0F684500981E51 /* OfflineMailerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* OfflineMailerAppDelegate.m */,
+				B243BC700FCE2370009556CF /* OMGlobals.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* OfflineMailer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD1598104E0D0100B6CBF1 /* Three20.xcodeproj */,
+				B2E9991D0FDB14E4001C3CDC /* Three20.bundle */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				B2DF128010262D170097722E /* Core Data */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				B272D94B0F8E8B870096D584 /* Settings.bundle */,
+				B26D4F4B0F9051FA0046A739 /* Icon.png */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* OfflineMailer_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2FBDA040FE4852700BDA639 /* offline.sql */,
+				B24346740F9BC4F800DF1746 /* bg.jpg */,
+				B26D4F790F910B5C0046A739 /* Default.png */,
+				B2397A020F901CBF008363ED /* light_bulb_off.png */,
+				B2397A030F901CBF008363ED /* light_bulb_on.png */,
+				B272DB9E0F8FEFEF0096D584 /* email.png */,
+				B272DB9F0F8FEFEF0096D584 /* folder.png */,
+				B272DBA00F8FEFEF0096D584 /* send_email.png */,
+				B272DAB40F8EF1E00096D584 /* alert_125x125.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				B2DF12DC102639130097722E /* OfflineMailer.xcdatamodel */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF12D31026388B0097722E /* CoreData.framework */,
+				B2DF114710261B4C0097722E /* libsqlite3.dylib */,
+				B243BB0B0FCDECFD009556CF /* CFNetwork.framework */,
+				B243B3190FCA3A9B009556CF /* AddressBook.framework */,
+				B2E7E0180F89AB3B00E5F677 /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				B2DD157B104E09E500B6CBF1 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B243BAF30FCDEAE4009556CF /* SMTP  */ = {
+			isa = PBXGroup;
+			children = (
+				B2FBD7930FE440AB00BDA639 /* Base64Transcoder.h */,
+				B2FBD7940FE440AB00BDA639 /* Base64Transcoder.m */,
+				B2FBD7950FE440AB00BDA639 /* HSK_CFUtilities.h */,
+				B2FBD7960FE440AB00BDA639 /* HSK_CFUtilities.m */,
+				B2FBD7970FE440AB00BDA639 /* NSData+Base64Additions.h */,
+				B2FBD7980FE440AB00BDA639 /* NSData+Base64Additions.m */,
+				B2FBD7990FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.h */,
+				B2FBD79A0FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.m */,
+				B2FBD79B0FE440AB00BDA639 /* SKPSMTPMessage.h */,
+				B2FBD79C0FE440AB00BDA639 /* SKPSMTPMessage.m */,
+				B2FBD79D0FE440AB00BDA639 /* SMTPSenderAppDelegate.h */,
+				B2FBD79E0FE440AB00BDA639 /* SMTPSenderAppDelegate.m */,
+				B2FBD79F0FE440AB00BDA639 /* SMTPSenderViewController.h */,
+				B2FBD7A00FE440AB00BDA639 /* SMTPSenderViewController.m */,
+			);
+			name = "SMTP ";
+			sourceTree = "<group>";
+		};
+		B2C7B79A0FC4D43B00AAE49A /* View Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B26D51810F91544E0046A739 /* BlueBadge.h */,
+				B26D51820F91544E0046A739 /* BlueBadge.m */,
+			);
+			name = "View Elements";
+			sourceTree = "<group>";
+		};
+		B2C7B79D0FC4D46000AAE49A /* Data Management */ = {
+			isa = PBXGroup;
+			children = (
+				B2FBDB120FE4965C00BDA639 /* Model */,
+				B26D4E3C0F9045B70046A739 /* MockDataSource.h */,
+				B26D4E3D0F9045B70046A739 /* MockDataSource.m */,
+				B2C7B79E0FC4D4A800AAE49A /* DataManager.h */,
+				B2C7B79F0FC4D4A800AAE49A /* DataManager.m */,
+				B243B28C0FCA34C6009556CF /* TTAddressBookDataSource.h */,
+				B243B28D0FCA34C6009556CF /* TTAddressBookDataSource.m */,
+			);
+			name = "Data Management";
+			sourceTree = "<group>";
+		};
+		B2DD1599104E0D0100B6CBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2DD15A2104E0D0100B6CBF1 /* libThree20.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2DF112B102619710097722E /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF112F10261AFA0097722E /* FMDatabase.h */,
+				B2DF113010261AFA0097722E /* FMDatabase.m */,
+				B2DF113110261AFA0097722E /* FMDatabaseAdditions.h */,
+				B2DF113210261AFA0097722E /* FMDatabaseAdditions.m */,
+				B2DF113310261AFA0097722E /* FMResultSet.h */,
+				B2DF113410261AFA0097722E /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		B2DF128010262D170097722E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		B2E7DEC20F894BB100E5F677 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2AB61940F8AEF37008C3106 /* Reachability.h */,
+				B2AB61950F8AEF37008C3106 /* Reachability.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		B2E7DEC30F894BBC00E5F677 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2E7DE9D0F89324D00E5F677 /* OfflineViewController.h */,
+				B2E7DE9E0F89324D00E5F677 /* OfflineViewController.m */,
+				B272D9900F8EB0E50096D584 /* SettingsViewController.h */,
+				B272D9910F8EB0E50096D584 /* SettingsViewController.m */,
+				B272DAF70F8FDB430096D584 /* AccountViewController.h */,
+				B272DAF80F8FDB430096D584 /* AccountViewController.m */,
+				B26D4E7E0F904A640046A739 /* SearchTestController.h */,
+				B26D4E7F0F904A640046A739 /* SearchTestController.m */,
+				B2FBDB0D0FE494EA00BDA639 /* SentMessagesViewController.h */,
+				B2FBDB0E0FE494EA00BDA639 /* SentMessagesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B2FBDB120FE4965C00BDA639 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B21F35701029087700A8F910 /* Message.h */,
+				B21F35711029087700A8F910 /* Message.m */,
+				B21F34EA1028F2B700A8F910 /* Contact.h */,
+				B21F34EB1028F2B700A8F910 /* Contact.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* OfflineMailer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OfflineMailer" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2DD15AE104E0D4400B6CBF1 /* PBXTargetDependency */,
+			);
+			name = OfflineMailer;
+			productName = OfflineMailer;
+			productReference = 1D6058910D05DD3D006BFB54 /* OfflineMailer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OfflineMailer" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2DD1599104E0D0100B6CBF1 /* Products */;
+					ProjectRef = B2DD1598104E0D0100B6CBF1 /* Three20.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* OfflineMailer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B2DD15A2104E0D0100B6CBF1 /* libThree20.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20.a;
+			remoteRef = B2DD15A1104E0D0100B6CBF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				B272D94C0F8E8B870096D584 /* Settings.bundle in Resources */,
+				B272DAB50F8EF1E00096D584 /* alert_125x125.png in Resources */,
+				B272DBA10F8FEFEF0096D584 /* email.png in Resources */,
+				B272DBA20F8FEFEF0096D584 /* folder.png in Resources */,
+				B272DBA30F8FEFEF0096D584 /* send_email.png in Resources */,
+				B2397A040F901CBF008363ED /* light_bulb_off.png in Resources */,
+				B2397A050F901CBF008363ED /* light_bulb_on.png in Resources */,
+				B26D4F4C0F9051FA0046A739 /* Icon.png in Resources */,
+				B26D4F7A0F910B5C0046A739 /* Default.png in Resources */,
+				B24346750F9BC4F800DF1746 /* bg.jpg in Resources */,
+				B2E9991E0FDB14E4001C3CDC /* Three20.bundle in Resources */,
+				B2FBDA050FE4852700BDA639 /* offline.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* OfflineMailerAppDelegate.m in Sources */,
+				B2E7DE9F0F89324D00E5F677 /* OfflineViewController.m in Sources */,
+				B2AB61960F8AEF37008C3106 /* Reachability.m in Sources */,
+				B272D9920F8EB0E50096D584 /* SettingsViewController.m in Sources */,
+				B272DAF90F8FDB430096D584 /* AccountViewController.m in Sources */,
+				B26D4E800F904A640046A739 /* SearchTestController.m in Sources */,
+				B26D51830F91544E0046A739 /* BlueBadge.m in Sources */,
+				B2C7B7A00FC4D4A800AAE49A /* DataManager.m in Sources */,
+				B243B28E0FCA34C6009556CF /* TTAddressBookDataSource.m in Sources */,
+				B2FBD7A10FE440AB00BDA639 /* Base64Transcoder.m in Sources */,
+				B2FBD7A20FE440AB00BDA639 /* HSK_CFUtilities.m in Sources */,
+				B2FBD7A30FE440AB00BDA639 /* NSData+Base64Additions.m in Sources */,
+				B2FBD7A40FE440AB00BDA639 /* NSStream+SKPSMTPExtensions.m in Sources */,
+				B2FBD7A50FE440AB00BDA639 /* SKPSMTPMessage.m in Sources */,
+				B2FBD7A60FE440AB00BDA639 /* SMTPSenderAppDelegate.m in Sources */,
+				B2FBD7A70FE440AB00BDA639 /* SMTPSenderViewController.m in Sources */,
+				B2FBDB0F0FE494EA00BDA639 /* SentMessagesViewController.m in Sources */,
+				B2DF113510261AFA0097722E /* FMDatabase.m in Sources */,
+				B2DF113610261AFA0097722E /* FMDatabaseAdditions.m in Sources */,
+				B2DF113710261AFA0097722E /* FMResultSet.m in Sources */,
+				B2DF12DD102639130097722E /* OfflineMailer.xcdatamodel in Sources */,
+				B21F34EC1028F2B700A8F910 /* Contact.m in Sources */,
+				B21F35721029087700A8F910 /* Message.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2DD15AE104E0D4400B6CBF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = B2DD15AD104E0D4400B6CBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OfflineMailer_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = OfflineMailer;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MailCore\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OfflineMailer_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = OfflineMailer;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "./Libraries/three20/**";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./Libraries/three20/**";
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OfflineMailer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OfflineMailer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
